@@ -3,7 +3,7 @@ name: Deploy React to S3 & CloudFront
 on:
   push:
     tags:
-      - "front-*" 
+      - "front-*"
 
 jobs:
   deploy:
@@ -15,6 +15,9 @@ jobs:
 
       - name: Acessar diretório do frontend
         run: cd .
+
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Instalar dependências
         run: |
