@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './components/navbar'
+
 import Home from './pages/Home'
 import About from './pages/About'
-import Navbar from './components/navbar'
+import Sponser from './pages/Sponser'
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/sponser" element={<Sponser />} />
       </Routes>
     </BrowserRouter>
   )
