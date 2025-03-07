@@ -18,12 +18,11 @@ jobs:
 
       - name: Instalar dependências
         run: |
-          corepack enable
           pnpm install --frozen-lockfile
         working-directory: .
 
       - name: Build da aplicação
-        run: pnpm run build
+        run: pnpm build
         working-directory: .
 
       - name: Upload para o S3
